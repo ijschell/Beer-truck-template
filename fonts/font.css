@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'FuturaBT-Book';
+  font-family: 'Futura-Book';
   src: url('FuturaBT-Book.woff') format('woff'),
        url('FuturaBT-Book.ttf') format('truetype'),
        url('FuturaBT-Book.svg#FuturaBT-Book') format('svg');
@@ -8,11 +8,11 @@
 }
 
 @font-face {
-  font-family: 'futura-book-bt-5935fe27b317a';
-  src: url('futura-book-bt-5935fe27b317a.eot');
-  src: url('futura-book-bt-5935fe27b317a.woff2') format('woff2'),
-       url('futura-book-bt-5935fe27b317a.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Futura-Heavy';
+	src: url('FuturaBT-Heavy.eot');
+	src: url('FuturaBT-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('FuturaBT-Heavy.woff') format('woff'),
+		url('FuturaBT-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
 }
-

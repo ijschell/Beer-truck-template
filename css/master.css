@@ -9,7 +9,8 @@ html, body {
   height: 100%; }
 
 body {
-  font-size: 20px; }
+  font-size: 20px;
+  background: red; }
 
 header {
   background: #ecd450;
@@ -23,18 +24,19 @@ header {
     background-position: 0 100%;
     width: 203.99px;
     height: 61.349px;
-    margin: 35px 0 0 150px; }
+    margin: 35px 0 0 88px; }
   header #main-menu {
     padding: 0;
-    margin: 0; }
+    margin: 50px 174px 0 0; }
     header #main-menu li {
       list-style: none;
       float: left; }
       header #main-menu li a {
-        font-size: 20px;
+        font-size: 0.7em;
         text-transform: uppercase;
         padding: 0 11.5px;
-        color: #3c392a; }
+        color: #3c392a;
+        font-family: "Futura-Heavy"; }
         header #main-menu li a:hover, header #main-menu li a:focus {
           text-decoration: none;
           color: #3c392a; }
@@ -45,36 +47,58 @@ header {
     background-position: 0 100%;
     width: 100%;
     height: 32px;
-    bottom: -32px; }
+    bottom: -32px;
+    z-index: 1; }
 
 #slider {
   position: relative;
   min-height: 382px;
   background: #fff; }
-  #slider .text {
-    position: absolute;
-    height: 100%;
-    width: 68%;
-    top: 0px;
-    left: 0px; }
-    #slider .text p {
+  #slider .container-fluid {
+    max-width: 996px;
+    position: relative;
+    height: 380px; }
+    #slider .container-fluid .text {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      font-size: 1.7em;
-      color: #3c392a; }
-  #slider .image {
-    position: absolute;
-    height: 100%;
-    width: 32%;
-    top: 0px;
-    right: 0px; }
-    #slider .image img {
+      height: 100%;
+      width: 68%;
+      top: 0px;
+      left: 0px; }
+      #slider .container-fluid .text p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 1.7em;
+        color: #3c392a;
+        font-family: "Futura-Heavy";
+        width: 724px; }
+    #slider .container-fluid .image {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
+      height: 100%;
+      width: 32%;
+      top: 0px;
+      right: 0px; }
+      #slider .container-fluid .image img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+  #slider .border-bottom {
+    position: absolute;
+    background-image: url("../images/border-slider.svg");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    width: 100%;
+    height: 32px;
+    bottom: -32px;
+    z-index: 1; }
+
+#parallax-only {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../images/noche2.jpg");
+  height: 485px; }
 
 /*# sourceMappingURL=master.css.map */

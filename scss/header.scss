@@ -10,11 +10,11 @@ header{
     background-position: 0 100%;
     width: 203.99px;
     height: 61.349px;
-    margin: 35px 0 0 150px;
+    margin: 35px 0 0 88px;
   }
   #main-menu{
     padding: 0;
-    margin: 0;
+    margin: 50px 174px 0 0;
     li{
       list-style: none;
       float: left;
@@ -31,5 +31,6 @@ header{
     width: 100%;
     height: 32px;
     bottom: -32px;
+    z-index: 1;
   }
 }

@@ -8,6 +8,8 @@ $size-menu: 0.7em;
 $size-middle: 1.7em;
 $size-h2: 1.5em;
 $font-marron: #3c392a;
+$futura-b: 'Futura-Book';
+$futura-h: 'Futura-Heavy';
 
 @mixin center-center {
   position: absolute;
@@ -27,14 +29,20 @@ $font-marron: #3c392a;
 }
 
 @mixin mainMenu {
-  font-size: $size-default;
+  font-size: $size-menu;
   text-transform: uppercase;
   padding: 0 11.5px;
   color: $font-marron;
+  font-family: $futura-h;
   &:hover, &:focus{
     text-decoration: none;
     color: $font-marron;
   }
+}
+
+@mixin parallax {
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 *{
@@ -49,4 +57,5 @@ html, body{
 }
 body{
   font-size: $size-default;
+  background: red;
 }
