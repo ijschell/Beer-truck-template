@@ -1,0 +1,31 @@
+//blue
+$bg-color1: #9DC6C5;
+//yellow
+$bg-color2: #ecd450;
+//white
+$bg-color3: #fff;
+
+$size-default: 20px;
+$size-menu: 0.7em;
+$size-middle: 1.7em;
+$size-h2: 1.5em;
+
+@mixin mainMenu {
+  font-size: $size-default;
+  text-transform: uppercase;
+  padding: 0 11.5px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.container-fluid{
+  max-width: 1280px;
+}
+html, body{
+  height: 100%;
+}
+body{
+  font-size: $size-default;
+}

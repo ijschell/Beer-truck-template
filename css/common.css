@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.container-fluid {
+  max-width: 1280px; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-size: 20px; }
+
+/*# sourceMappingURL=common.css.map */
