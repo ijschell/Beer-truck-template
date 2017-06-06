@@ -2,18 +2,39 @@
 $bg-color1: #9DC6C5;
 //yellow
 $bg-color2: #ecd450;
-//white
-$bg-color3: #fff;
 
 $size-default: 20px;
 $size-menu: 0.7em;
 $size-middle: 1.7em;
 $size-h2: 1.5em;
+$font-marron: #3c392a;
+
+@mixin center-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin center-none {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin none-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 @mixin mainMenu {
   font-size: $size-default;
   text-transform: uppercase;
   padding: 0 11.5px;
+  color: $font-marron;
+  &:hover, &:focus{
+    text-decoration: none;
+    color: $font-marron;
+  }
 }
 
 *{

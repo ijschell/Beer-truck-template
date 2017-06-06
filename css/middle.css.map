@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,OAAO;EACL,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,KAAK;EACjB,UAAU,EAAE,IAAI;EAChB,aAAK;IACH,QAAQ,EAAE,QAAQ;IAClB,MAAM,EAAE,IAAI;IACZ,KAAK,EAAE,GAAG;IACV,UAAU,EAAE,GAAG",
+"sources": ["../scss/middle.scss"],
 "names": [],
 "file": "middle.css"
 }

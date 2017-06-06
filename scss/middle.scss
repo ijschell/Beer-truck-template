@@ -1,0 +1,28 @@
+#slider{
+  position: relative;
+  min-height: 382px;
+  background: #fff;
+  .text{
+    position: absolute;
+    height: 100%;
+    width: 68%;
+    top: 0px;
+    left: 0px;
+    p{
+      @include center-center;
+      text-align: center;
+      font-size: $size-middle;
+      color: $font-marron;
+    }
+  }
+  .image{
+    position: absolute;
+    height: 100%;
+    width: 32%;
+    top: 0px;
+    right: 0px;
+    img{
+      @include center-center;
+    }
+  }
+}
