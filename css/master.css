@@ -9,8 +9,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-size: 20px;
-  background: red; }
+  font-size: 20px; }
 
 header {
   background: #ecd450;
@@ -100,5 +99,125 @@ header {
   background-attachment: fixed;
   background-image: url("../images/noche2.jpg");
   height: 485px; }
+
+#nosotros .left {
+  float: left;
+  background: #97bebf;
+  height: 440px;
+  position: relative;
+  width: 50%; }
+  #nosotros .left .border-top {
+    position: absolute;
+    background-image: url("../images/nosotros-top-blue.svg");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: cover;
+    width: 100%;
+    height: 32px;
+    top: -32px;
+    z-index: 1; }
+  #nosotros .left .border-bottom {
+    position: absolute;
+    background-image: url("../images/nosotros-top-blue.svg");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: cover;
+    width: 100%;
+    height: 32px;
+    bottom: -16px;
+    z-index: 1; }
+  #nosotros .left .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #nosotros .left .text h2 {
+      font-family: "Futura-Heavy";
+      font-size: 1.5em;
+      color: #fff; }
+    #nosotros .left .text p {
+      font-size: 20px;
+      font-family: "Futura-Heavy";
+      color: #fff; }
+#nosotros .right {
+  float: right;
+  background: #ecd450;
+  height: 440px;
+  position: relative;
+  width: 50%; }
+  #nosotros .right .border-top {
+    position: absolute;
+    background-image: url("../images/nosotros-top-yellow.svg");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: cover;
+    width: 100%;
+    height: 32px;
+    top: -32px;
+    z-index: 1; }
+  #nosotros .right .border-bottom {
+    position: absolute;
+    background-image: url("../images/nosotros-top-yellow.svg");
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    background-size: cover;
+    width: 100%;
+    height: 32px;
+    bottom: -16px;
+    z-index: 1; }
+  #nosotros .right img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 470px;
+    left: 57px; }
+
+#fotos .left {
+  float: left;
+  position: relative;
+  width: 50%;
+  background-size: cover;
+  background-position: right;
+  background-image: url("../images/rubia.jpg");
+  height: 515px; }
+  #fotos .left div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    #fotos .left div h2 {
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-family: "Futura-Heavy"; }
+      #fotos .left div h2 span {
+        font-size: 3em; }
+#fotos .right {
+  float: right;
+  position: relative;
+  width: 50%;
+  height: 515px;
+  background: #5c8283; }
+  #fotos .right div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 120px; }
+    #fotos .right div h2 {
+      font-family: "Futura-Heavy";
+      font-size: 1.5em;
+      color: #fff;
+      text-transform: uppercase; }
+    #fotos .right div p {
+      font-size: 20px;
+      font-family: "Futura-Heavy";
+      color: #fff;
+      margin: 0; }
+    #fotos .right div ul li {
+      list-style: none;
+      font-size: 20px;
+      font-family: "Futura-Book";
+      color: #fff; }
 
 /*# sourceMappingURL=master.css.map */
