@@ -8,13 +8,25 @@ header{
     background-image: url('../images/logotipo.svg');
     background-repeat: repeat-x;
     background-position: 0 100%;
+    background-size: cover;
     width: 203.99px;
     height: 61.349px;
     margin: 35px 0 0 88px;
+    @media(max-width: 768px){
+      margin: 25px 0 0 0;
+    }
+    @media(max-width: 425px){
+      margin: 35px 0 0 0;
+      width: 150px;
+      height: 45px;
+    }
   }
   #main-menu{
     padding: 0;
     margin: 50px 174px 0 0;
+    @media(max-width: 768px){
+      display: none;
+    }
     li{
       list-style: none;
       float: left;
@@ -32,5 +44,82 @@ header{
     height: 32px;
     bottom: -32px;
     z-index: 1;
+  }
+  .menu-burguer{
+    position: absolute;
+    right: 50px;
+    top: 35px;
+    opacity: 1;
+    display: none;
+    @media(max-width: 768px){
+      display: block;
+    }
+    img{
+      width: 40px;
+    }
+  }
+  .menu-burguer.open{
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    opacity: 0;
+    display: none;
+  }
+}
+#menu-responsive{
+  position: fixed;
+  top: 0px;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: #ecd450;
+  transition: all 0.5s ease;
+  @media(max-width: 768px){
+    display: block;
+  }
+  .menu-close{
+    position: absolute;
+    right: 50px;
+    top: 35px;
+    opacity: 0;
+  }
+  ul{
+    @include center-center;
+    @media(max-width: 425px){
+      width: calc(100% - 100px);
+    }
+    li{
+      list-style: none;
+      a{
+        font-size: 1.5em;
+        text-transform: uppercase;
+        padding: 10px;
+        color: $font-marron;
+        font-family: $font;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+        &:hover, &:focus{
+          text-decoration: none;
+          color: $font-marron;
+        }
+        @media(max-width: 425px){
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}
+#menu-responsive.open{
+  right: 0px;
+  .menu-close{
+    position: absolute;
+    right: 50px;
+    top: 35px;
+    opacity: 1;
+    img{
+      width: 50px;
+    }
   }
 }

@@ -16,15 +16,16 @@
       <div class="container-fluid">
         <h1 class="pull-left">Logotipo</h1>
         <ul id="main-menu" class="pull-right">
-          <li><a href="#">Sobre nosotros</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Fotos</a></li>
-          <li><a href="#">Nuestras cervezas</a></li>
-          <li><a href="#">Truck stop</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#nosotros">Sobre nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#servicios">Fotos</a></li>
+          <li><a href="#nuestras-cervezas">Nuestras cervezas</a></li>
+          <li><a href="#donde-estamos">Truck stop</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
       <span class="border-bottom"></span>
+      <a class="menu-burguer" href="#"><img src="./images/menu.svg" alt=""></a>
     </header>
 
     <section id="slider">
@@ -37,7 +38,7 @@
             placeres, no tiene precio.
           </p>
         </div>
-        <div class="image">
+        <div class="image hidden-xs">
           <img src="./images/logo-banner.svg" alt="">
         </div>
       </div>
@@ -72,7 +73,7 @@
           <img src="./images/rollo.svg" alt="">
         </div>
       </div>
-      <div class="right">
+      <div class="right" id="servicios">
         <div>
           <h2>Servicios</h2>
           <p>Llevamos el placer de<br /> lo artesanal a:</p>
@@ -237,51 +238,50 @@
     <section id="donde-estamos">
       <span class="border-top"></span>
       <div class="container-fluid">
-        <h2>Donde estamos<br /><span>Truck shop</span></h2>
+        <h2>Donde estamos<br /><span>Truck stop</span></h2>
       </div>
       <div id="map" scrolling="no"></div>
     </section>
+
+    <footer>
+      <div class="border-top"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <h2 style="margin-top: 113px;">Enviá<br /><span>Mail</span></h2>
+            <p><a href="#">info@woodtrukbeer.com.ar</a></p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <img style="margin-top: 84px;" class="footer-logo" src="./images/footer-logo.svg" alt="">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h2 style="margin-top: 113px;">Contacto<br /><span>Redes</span></h2>
+            <div class="share">
+              <a href="#"><img src="./images/share-facebook.svg" alt=""></a>
+              <a href="#"><img src="./images/share-instagram.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="menu-responsive" >
+
+      <a class="menu-close" href="#"><img src="./images/close.svg" alt=""></a>
+      <ul>
+        <li><a href="#nosotros">Sobre nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#servicios">Fotos</a></li>
+        <li><a href="#nuestras-cervezas">Nuestras cervezas</a></li>
+        <li><a href="#donde-estamos">Truck stop</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
 
     <script src="./libs/jquery-3.2.1.min.js" charset="utf-8"></script>
     <script src="./libs/bootstrap.min.js" charset="utf-8"></script>
     <script src="./js/scripts.js" charset="utf-8"></script>
     <script type="text/javascript">
-      // var locations = [
-      //   ['Local 1', -34.5846463, -58.4399668, 'Dirección'],
-      //   ['Local 2', -34.5938014, -58.4168497, 'Dirección'],
-      //   ['Local 3', -34.5801464, -58.4309592, 'Dirección']
-      // ]
-      // function initMap() {
-      //   var uluru = {lat: -34.5869655, lng: -58.4328046};
-      //   var map = new google.maps.Map(document.getElementById('map'), {
-      //     zoom: 14,
-      //     center: uluru,
-      //     scrollwheel: false,
-      //     disableDefaultUI: true
-      //   });
-      //
-      //   var infowindow = new google.maps.InfoWindow();
-      //
-      //   for (var i = 0; i < locations.length; i++) {
-      //     var loc = {lat: locations[i][1], lng: locations[i][2]}
-      //     var contentString = '<div>'+
-      //       '<p><b>'+locations[i][0]+'</b></p>'+
-      //       '<p>Dirección: '+locations[i][3]+'</p>';
-      //     var marker = new google.maps.Marker({
-      //       position: loc,
-      //       map: map,
-      //       icon: './images/marker.svg',
-      //       title: locations[i][0]
-      //     });
-      //     google.maps.event.addListener(marker, 'click', function() {
-      //       infowindow.close();
-      //       infowindow.setContent(contentString);
-      //       infowindow.open(map, marker);
-      //     });
-      //   }
-      //
-      // }
-
       var locations = [
         ['Local 1', -34.5846463, -58.4399668, 'Dirección'],
         ['Local 2', -34.5938014, -58.4168497, 'Dirección'],

@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'center-center'.
-        on line 16 of E:\Software\xampp\htdocs\estefania\cervezas\template\scss\middle.scss, in `center-center'
-        from line 16 of E:\Software\xampp\htdocs\estefania\cervezas\template\scss\middle.scss
+        on line 19 of E:\Software\xampp\htdocs\estefania\cervezas\template\scss\middle.scss, in `center-center'
+        from line 19 of E:\Software\xampp\htdocs\estefania\cervezas\template\scss\middle.scss
 
-11:       height: 100%;
-12:       width: 68%;
-13:       top: 0px;
 14:       left: 0px;
-15:       p{
-16:         @include center-center;
-17:         text-align: center;
-18:         font-size: $size-middle;
-19:         color: $font-marron;
-20:         font-family: $font;
-21:         width: 724px;
+15:       @media(max-width: 425px){
+16:         width: 100%;
+17:       }
+18:       p{
+19:         @include center-center;
+20:         text-align: center;
+21:         font-size: $size-middle;
+22:         color: $font-marron;
+23:         font-family: $font;
+24:         width: 724px;
 
 Backtrace:
-E:\Software\xampp\htdocs\estefania\cervezas\template\scss\middle.scss:16:in `center-center'
-E:\Software\xampp\htdocs\estefania\cervezas\template\scss\middle.scss:16
+E:\Software\xampp\htdocs\estefania\cervezas\template\scss\middle.scss:19:in `center-center'
+E:\Software\xampp\htdocs\estefania\cervezas\template\scss\middle.scss:19
 E:/Software/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 E:/Software/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
 E:/Software/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
@@ -99,4 +99,4 @@ E:/Software/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'center-center'.\A         on line 16 of E:\Software\xampp\htdocs\estefania\cervezas\template\scss\middle.scss, in `center-center'\A         from line 16 of E:\Software\xampp\htdocs\estefania\cervezas\template\scss\middle.scss\A \A 11:       height: 100%;\A 12:       width: 68%;\A 13:       top: 0px;\A 14:       left: 0px;\A 15:       p{\A 16:         @include center-center;\A 17:         text-align: center;\A 18:         font-size: $size-middle;\A 19:         color: $font-marron;\A 20:         font-family: $font;\A 21:         width: 724px;"; }
+  content: "Error: Undefined mixin 'center-center'.\A         on line 19 of E:\Software\xampp\htdocs\estefania\cervezas\template\scss\middle.scss, in `center-center'\A         from line 19 of E:\Software\xampp\htdocs\estefania\cervezas\template\scss\middle.scss\A \A 14:       left: 0px;\A 15:       @media(max-width: 425px){\A 16:         width: 100%;\A 17:       }\A 18:       p{\A 19:         @include center-center;\A 20:         text-align: center;\A 21:         font-size: $size-middle;\A 22:         color: $font-marron;\A 23:         font-family: $font;\A 24:         width: 724px;"; }

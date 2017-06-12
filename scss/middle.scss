@@ -12,6 +12,9 @@
       width: 68%;
       top: 0px;
       left: 0px;
+      @media(max-width: 425px){
+        width: 100%;
+      }
       p{
         @include center-center;
         text-align: center;
@@ -19,6 +22,13 @@
         color: $font-marron;
         font-family: $font;
         width: 724px;
+        @media(max-width: 768px){
+          font-size: 1.5em;
+        }
+        @media(max-width: 425px){
+          font-size: 1.2em;
+          width: calc(100% - 100px);
+        }
       }
     }
     .image{
@@ -29,6 +39,9 @@
       right: 0px;
       img{
         @include center-center;
+        @media(max-width: 768px){
+          width: 70%;
+        }
       }
     }
   }
@@ -47,6 +60,12 @@
   @include parallax;
   background-image: url('../images/noche2.jpg');
   height: 485px;
+  @media(max-width: 768px){
+    height: 350px;
+  }
+  @media(max-width: 425px){
+    display: none;
+  }
 }
 #nosotros{
   .left{
@@ -55,6 +74,10 @@
     height: 440px;
     position: relative;
     width: 50%;
+    @media(max-width: 425px){
+      width: 100%;
+      height: 336px;
+    }
     .border-top{
       position: absolute;
       background-image: url('../images/nosotros-top-blue.svg');
@@ -65,6 +88,9 @@
       height: 32px;
       top: -32px;
       z-index: 1;
+      @media(max-width: 425px){
+        top: -16px;
+      }
     }
     .border-bottom{
       position: absolute;
@@ -79,13 +105,17 @@
     }
     .text{
       @include center-center;
+      @media(max-width: 425px){
+        width: calc(100% - 100px);
+      }
       h2{
         font-family: $font;
         font-size: $size-h2;
         color: #fff;
+        text-transform: uppercase;
       }
       p{
-        font-size: $size-default;
+        font-size: 1em;
         font-family: $font;
         color: #fff;
       }
@@ -97,6 +127,10 @@
     height: 440px;
     position: relative;
     width: 50%;
+    @media(max-width: 425px){
+      width: 100%;
+      height: 336px;
+    }
     .border-top{
       position: absolute;
       background-image: url('../images/nosotros-top-yellow.svg');
@@ -107,6 +141,9 @@
       height: 32px;
       top: -32px;
       z-index: 1;
+      @media(max-width: 425px){
+        top: -16px;
+      }
     }
     .border-bottom{
       position: absolute;
@@ -123,6 +160,13 @@
       @include none-center;
       width: 470px;
       left: 57px;
+      @media(max-width: 768px){
+        width: 276px;
+      }
+      @media(max-width: 425px){
+        left: 50px;
+        width: calc(100% - 100px);
+      }
     }
   }
 }
@@ -135,16 +179,25 @@
     background-position: right;
     background-image: url('../images/rubia.jpg');
     height: 515px;
+    @media(max-width: 768px){
+      background-position: -76px 0px;
+    }
+    @media(max-width: 425px){
+      width: 100%;
+    }
     div{
       @include center-center;
       text-align: center;
       h2{
         color: #fff;
-        font-size: $size-default;
+        font-size: 1em;
         text-transform: uppercase;
         font-family: $font;
         span{
           font-size: 3em;
+          @media(max-width: 425px){
+            font-size: 2em;
+          }
         }
       }
     }
@@ -155,9 +208,16 @@
     width: 50%;
     height: 515px;
     background: #5c8283;
+    @media(max-width: 425px){
+      width: 100%;
+    }
     div{
       @include none-center;
       left: 120px;
+      @media(max-width: 425px){
+        left: 50px;
+        width: calc(100% - 100px);
+      }
       h2{
         font-family: $font;
         font-size: $size-h2;
@@ -165,7 +225,7 @@
         text-transform: uppercase;
       }
       p{
-        font-size: $size-default;
+        font-size: 1em;
         font-family: $font;
         color: #fff;
         margin: 0;
@@ -173,7 +233,7 @@
       ul{
         li{
           list-style: none;
-          font-size: $size-default;
+          font-size: 1em;
           font-family: $font;
           color: #fff;
         }
@@ -199,6 +259,9 @@
       font-size: 3em;
       font-weight: 900;
       letter-spacing: 4px;
+      @media(max-width: 425px){
+        font-size: 2em;
+      }
     }
     &::before{
       content: '';
@@ -230,11 +293,23 @@
   .container-proceso{
     display: table;
     margin: 60px auto 60px auto;
+    @media(max-width: 768px){
+      margin: 60px auto 60px auto;
+      width: 100%;
+    }
     .box-proceso{
       display: block;
       margin: 0 25px 0 25px;
       height: 368px;
       float: left;
+      @media(max-width: 768px){
+        width: calc(33% - 48px);
+      }
+      @media(max-width: 425px){
+        width: 100%;
+        float: none;
+        margin: 0;
+      }
       img{
         margin-bottom: 50px;
       }
@@ -264,6 +339,9 @@
       font-size: 3em;
       font-weight: 900;
       letter-spacing: 4px;
+      @media(max-width: 425px){
+        font-size: 2em;
+      }
     }
     &::before{
       content: '';
@@ -289,6 +367,9 @@
     z-index: 1;
     left: 0;
   }
+  .col-xs-12:first-child{
+    margin-bottom: 60px;
+  }
 }
 #contacto{
   padding: 40px 0;
@@ -308,6 +389,9 @@
       font-size: 3em;
       font-weight: 900;
       letter-spacing: 4px;
+      @media(max-width: 425px){
+        font-size: 2em;
+      }
     }
     &::before{
       content: '';
@@ -375,26 +459,48 @@
       &:focus{
         outline: initial;
       }
+      @media(max-width: 425px){
+        font-size: 0.9em;
+        text-indent: 20px;
+      }
     }
     input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
       color: #423932;
+      @media(max-width: 425px){
+        font-size: 1em;
+      }
     }
     input::-moz-placeholder, textarea::-moz-placeholder {
       color: #423932;
+      @media(max-width: 425px){
+        font-size: 1em;
+      }
     }
     input:-ms-input-placeholder, textarea:-ms-input-placeholder {
       color: #423932;
+      @media(max-width: 425px){
+        font-size: 1em;
+      }
     }
     input:-moz-placeholder, textarea:-moz-placeholder {
       color: #423932;
+      @media(max-width: 425px){
+        font-size: 1em;
+      }
     }
     .input-tel{
       width: 40%;
       float: left;
+      @media(max-width: 425px){
+        width: 100%;
+      }
     }
     .input-mail{
       width: calc(60% - 13px);
       float: right;
+      @media(max-width: 425px){
+        width: 100%;
+      }
     }
     textarea{
       height: 170px;
@@ -428,7 +534,7 @@
   }
 }
 #donde-estamos{
-  padding: 40px 0;
+  padding: 40px 0 0 0;
   clear: both;
   position: relative;
   text-align: center;
@@ -445,6 +551,9 @@
       font-size: 3em;
       font-weight: 900;
       letter-spacing: 4px;
+      @media(max-width: 425px){
+        font-size: 2em;
+      }
     }
     &::before{
       content: '';

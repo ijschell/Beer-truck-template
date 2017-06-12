@@ -4,6 +4,10 @@
 
 .container-fluid {
   max-width: 1280px; }
+  @media (max-width: 768px) {
+    .container-fluid {
+      padding-left: 50px;
+      padding-right: 50px; } }
 
 html, body {
   height: 100%; }
@@ -11,5 +15,8 @@ html, body {
 body {
   font-size: 20px;
   font-family: "Cabin", sans-serif; }
+  @media (max-width: 768px) {
+    body {
+      font-size: 17px; } }
 
 /*# sourceMappingURL=common.css.map */
