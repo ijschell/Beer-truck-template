@@ -19,6 +19,20 @@ body {
     body {
       font-size: 17px; } }
 
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: #fedd36; }
+  #loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 header {
   background: #ecd450;
   height: 110px;
@@ -166,7 +180,8 @@ header {
         font-size: 1.7em;
         color: #3c392a;
         font-family: "Cabin", sans-serif;
-        width: 724px; }
+        width: 724px;
+        font-weight: 700; }
         @media (max-width: 768px) {
           #slider .container-fluid .text p {
             font-size: 1.5em; } }
@@ -209,6 +224,19 @@ header {
   @media (max-width: 425px) {
     #parallax-only {
       display: none; } }
+
+#myCarousel {
+  height: 485px; }
+  #myCarousel .item img {
+    width: 100%; }
+    #myCarousel .item img:focus {
+      outline: initial; }
+  #myCarousel .carousel-control .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    #myCarousel .carousel-control .arrow img {
+      width: 50px; }
 
 #nosotros .left {
   float: left;
@@ -394,17 +422,6 @@ header {
       @media (max-width: 425px) {
         #maestro-cervecero h2 span {
           font-size: 2em; } }
-    #maestro-cervecero h2::before {
-      content: '';
-      position: absolute;
-      bottom: -13px;
-      width: 43px;
-      height: 7px;
-      background: #3E3630;
-      display: block;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%); }
   #maestro-cervecero .border-top {
     position: absolute;
     background-image: url("../images/border-top-withe.svg");
@@ -468,17 +485,6 @@ header {
       @media (max-width: 425px) {
         #nuestras-cervezas h2 span {
           font-size: 2em; } }
-    #nuestras-cervezas h2::before {
-      content: '';
-      position: absolute;
-      bottom: -13px;
-      width: 43px;
-      height: 7px;
-      background: #3E3630;
-      display: block;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%); }
   #nuestras-cervezas .border-top {
     position: absolute;
     background-image: url("../images/border-nuestras-cervezas-top.svg");
@@ -516,17 +522,6 @@ header {
       @media (max-width: 425px) {
         #contacto h2 span {
           font-size: 2em; } }
-    #contacto h2::before {
-      content: '';
-      position: absolute;
-      bottom: -13px;
-      width: 43px;
-      height: 7px;
-      background: #3E3630;
-      display: block;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%); }
   #contacto .border-top {
     position: absolute;
     background-image: url("../images/border-top-withe.svg");
@@ -655,17 +650,6 @@ header {
       @media (max-width: 425px) {
         #donde-estamos h2 span {
           font-size: 2em; } }
-    #donde-estamos h2::before {
-      content: '';
-      position: absolute;
-      bottom: -13px;
-      width: 43px;
-      height: 7px;
-      background: #3E3630;
-      display: block;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%); }
   #donde-estamos .border-top {
     position: absolute;
     background-image: url("../images/border-top-withe.svg");
@@ -680,6 +664,9 @@ header {
   #donde-estamos #map {
     width: 100%;
     height: 500px; }
+
+.title img {
+  height: 120px; }
 
 footer {
   position: relative;
@@ -708,6 +695,7 @@ footer {
     letter-spacing: 4px;
     letter-spacing: 1px;
     margin-bottom: 30px;
+    margin-top: 113px;
     color: #3c392a; }
     footer h2 span {
       font-size: 3em;
@@ -716,17 +704,6 @@ footer {
       @media (max-width: 425px) {
         footer h2 span {
           font-size: 2em; } }
-    footer h2::before {
-      content: '';
-      position: absolute;
-      bottom: -13px;
-      width: 43px;
-      height: 7px;
-      background: #3E3630;
-      display: block;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%); }
   footer .footer-logo {
     width: 233px;
     margin: auto; }

@@ -75,3 +75,15 @@ body{
     font-size: 17px;
   }
 }
+#loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: #fedd36;
+  img{
+    @include center-center;
+  }
+}

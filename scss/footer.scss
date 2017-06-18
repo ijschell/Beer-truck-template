@@ -24,6 +24,7 @@ footer{
     @include font-title(600);
     letter-spacing: 1px;
     margin-bottom: 30px;
+    margin-top: 113px;
     color: $font-marron;
     span{
       font-size: 3em;
@@ -33,17 +34,17 @@ footer{
         font-size: 2em;
       }
     }
-    &::before{
-      content: '';
-      position: absolute;
-      bottom: -13px;
-      width: 43px;
-      height: 7px;
-      background: #3E3630;
-      display: block;
-      @include center-none;
-
-    }
+    // &::before{
+    //   content: '';
+    //   position: absolute;
+    //   bottom: -13px;
+    //   width: 43px;
+    //   height: 7px;
+    //   background: #3E3630;
+    //   display: block;
+    //   @include center-none;
+    //
+    // }
   }
   .footer-logo{
     width: 233px;
