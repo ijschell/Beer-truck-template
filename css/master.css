@@ -241,6 +241,9 @@ header {
 
 #myCarousel {
   height: 485px; }
+  @media (max-width: 768px) {
+    #myCarousel {
+      height: 300px; } }
   #myCarousel .item img {
     width: 100%; }
     #myCarousel .item img:focus {

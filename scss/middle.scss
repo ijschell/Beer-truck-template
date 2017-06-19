@@ -83,6 +83,9 @@
 }
 #myCarousel{
   height: 485px;
+  @media(max-width: 768px){
+    height: 300px;
+  }
   .item{
     img{
       width: 100%;
