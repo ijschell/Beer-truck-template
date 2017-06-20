@@ -391,26 +391,26 @@ header {
   @media (max-width: 425px) {
     #fotos .right {
       width: 100%; } }
-  #fotos .right div {
+  #fotos .right > div {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 120px; }
     @media (max-width: 425px) {
-      #fotos .right div {
+      #fotos .right > div {
         left: 50px;
         width: calc(100% - 100px); } }
-    #fotos .right div h2 {
+    #fotos .right > div h2 {
       font-family: "Cabin", sans-serif;
       font-size: 1.5em;
       color: #fff;
       text-transform: uppercase; }
-    #fotos .right div p {
+    #fotos .right > div p {
       font-size: 1em;
       font-family: "Cabin", sans-serif;
       color: #fff;
       margin: 0; }
-    #fotos .right div ul li {
+    #fotos .right > div ul li {
       list-style: none;
       font-size: 1em;
       font-family: "Cabin", sans-serif;

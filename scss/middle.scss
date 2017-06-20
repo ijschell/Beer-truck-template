@@ -247,7 +247,7 @@
     @media(max-width: 425px){
       width: 100%;
     }
-    div{
+    > div{
       @include none-center;
       left: 120px;
       @media(max-width: 425px){
