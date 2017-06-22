@@ -26,7 +26,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 100;
-  background: #ffde0a; }
+  background: #ffdd37; }
   #loader img {
     position: absolute;
     top: 50%;
@@ -684,6 +684,39 @@ header {
 
 .title img {
   height: 120px; }
+
+#box-overlay {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  display: none; }
+  #box-overlay .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 320px;
+    height: auto;
+    background: #fff;
+    border: solid 10px #fff; }
+    #box-overlay .centered .carousel-control .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+      #box-overlay .centered .carousel-control .arrow img {
+        height: 50px; }
+    #box-overlay .centered .closed {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/close.png");
+      background-size: cover; }
 
 footer {
   position: relative;

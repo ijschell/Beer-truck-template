@@ -27,6 +27,61 @@ $(document).on('click', '#menu-responsive ul li a', function(e){
   menu.close();
 });
 
+$(document).on('click', '#box-overlay .centered .closed', function(e){
+  e.preventDefault();
+  $('#box-overlay').fadeOut();
+})
+
+function printSliderBox(){
+
+  $.when($('#box-overlay').fadeIn().html(
+    '<div class="centered">'+
+      '<div id="myCarouselFotos" class="myCarouselFotos carousel slide hidden-xs" data-ride="carousel">'+
+        '<div class="carousel-inner">'+
+          '<div class="item active">'+
+            '<img src="./images/slides-home/slide1.jpg" alt="">'+
+          '</div>'+
+          '<div class="item">'+
+            '<img src="./images/slides-home/slide2.jpg" alt="">'+
+          '</div>'+
+          '<div class="item">'+
+            '<img src="./images/slides-home/slide3.jpg" alt="">'+
+          '</div>'+
+          '<div class="item">'+
+            '<img src="./images/slides-home/slide4.jpg" alt="">'+
+          '</div>'+
+          '<div class="item">'+
+            '<img src="./images/slides-home/slide5.jpg" alt="">'+
+          '</div>'+
+        '</div>'+
+        '<a class="left carousel-control" href=".myCarouselFotos" data-slide="prev">'+
+          '<span class="arrow" style="left: 10px;"><img src="./images/flechaizq.svg" alt=""></span>'+
+          '<span class="sr-only">Previous</span>'+
+        '</a>'+
+        '<a class="right carousel-control" href=".myCarouselFotos" data-slide="next">'+
+          '<span class="arrow" style="right: 10px;"><img src="./images/flechaderech.svg" alt=""></span>'+
+          '<span class="sr-only">Next</span>'+
+        '</a>'+
+      '</div>'+
+      '<a href="#" class="closed"></a>'+
+    '</div>'
+  )).done(function(){
+    $('#box-overlay .centered').hover(function(){
+      $('#box-overlay').attr('data-over', 'true');
+    }, function(){
+      $('#box-overlay').attr('data-over', 'false');
+    });
+
+    $(document).on('click', '#box-overlay', function(){
+      if($('#box-overlay').attr('data-over') == 'false'){
+        $(this).fadeOut();
+      }
+    })
+
+  })
+
+}
+
 // Select all links with hashes
 $('a[href*="#"]')
 // Remove links that don't actually link to anything

@@ -6,14 +6,15 @@ function getAllData(){
       getall: true
     }
   }).done(function(result){
-    //sections
     var result = $.parseJSON(result);
-    console.log(result);
-    console.log(result.sections[0].length);
+    //sections
     for (var i = 0; i < result.sections[0].length; i++) {
       $('[data-section="section'+i+'"]').html(result.sections[0][i].content);
     }
-
+    //general
+    $('head title').text(result.general[0][0].title);
+    $('head meta[name="description"]').attr('content', result.general[0][0].description);
+    $('head meta[name="keywords"]').attr('content', result.general[0][0].keywords);
   })
 }
 
