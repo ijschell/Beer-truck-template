@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$bg-color2".
-        on line 2 of E:\Software\xampp\htdocs\estefania\cervezas\template\scss\header.scss
+        on line 2 of E:\Software\wamp64\www\estefania\cervezas\template\scss\header.scss
 
 1: header{
 2:   background: $bg-color2;
@@ -11,7 +11,7 @@ Error: Undefined variable: "$bg-color2".
 7:     text-indent: -10000px;
 
 Backtrace:
-E:\Software\xampp\htdocs\estefania\cervezas\template\scss\header.scss:2
+E:\Software\wamp64\www\estefania\cervezas\template\scss\header.scss:2
 E:/Software/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 E:/Software/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
 E:/Software/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -58,4 +58,4 @@ E:/Software/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$bg-color2\".\A         on line 2 of E:\Software\xampp\htdocs\estefania\cervezas\template\scss\header.scss\A \A 1: header{\A 2:   background: $bg-color2;\A 3:   height: 110px;\A 4:   position: relative;\A 5:   h1{\A 6:     margin: 0;\A 7:     text-indent: -10000px;"; }
+  content: "Error: Undefined variable: \"$bg-color2\".\A         on line 2 of E:\Software\wamp64\www\estefania\cervezas\template\scss\header.scss\A \A 1: header{\A 2:   background: $bg-color2;\A 3:   height: 110px;\A 4:   position: relative;\A 5:   h1{\A 6:     margin: 0;\A 7:     text-indent: -10000px;"; }

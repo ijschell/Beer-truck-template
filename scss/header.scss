@@ -12,7 +12,7 @@ header{
     width: 203.99px;
     height: 61.349px;
     margin: 35px 0 0 88px;
-    @media(max-width: 768px){
+    @media(max-width: 1150px){
       margin: 25px 0 0 0;
     }
     @media(max-width: 425px){
@@ -24,6 +24,9 @@ header{
   #main-menu{
     padding: 0;
     margin: 50px 174px 0 0;
+    @media(max-width: 1024px){
+      margin: 50px 0 0 0;
+    }
     @media(max-width: 768px){
       display: none;
     }
@@ -32,6 +35,12 @@ header{
       float: left;
       a{
         @include mainMenu;
+        @media(max-width: 890px){
+          font-size: 0.6em;
+        }
+        @media(max-width: 814px){
+          font-size: 0.5em;
+        }
       }
     }
   }

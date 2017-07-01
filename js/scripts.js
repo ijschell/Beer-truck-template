@@ -122,3 +122,22 @@ $('a[href*="#"]')
 $(window).on('load', function(){
   $('#loader').fadeOut();
 })
+
+$(document).ready(function(){
+  $('.slick-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+        }
+      }
+    ]
+  });
+  $('.slick-slider .slick-arrow').text('');
+})

@@ -47,7 +47,7 @@ header {
     width: 203.99px;
     height: 61.349px;
     margin: 35px 0 0 88px; }
-    @media (max-width: 768px) {
+    @media (max-width: 1150px) {
       header h1 {
         margin: 25px 0 0 0; } }
     @media (max-width: 425px) {
@@ -58,6 +58,9 @@ header {
   header #main-menu {
     padding: 0;
     margin: 50px 174px 0 0; }
+    @media (max-width: 1024px) {
+      header #main-menu {
+        margin: 50px 0 0 0; } }
     @media (max-width: 768px) {
       header #main-menu {
         display: none; } }
@@ -74,6 +77,12 @@ header {
         header #main-menu li a:hover, header #main-menu li a:focus {
           text-decoration: none;
           color: #3c392a; }
+        @media (max-width: 890px) {
+          header #main-menu li a {
+            font-size: 0.6em; } }
+        @media (max-width: 814px) {
+          header #main-menu li a {
+            font-size: 0.5em; } }
   header .border-bottom {
     position: absolute;
     background-image: url("../images/border-header.svg");
@@ -248,12 +257,15 @@ header {
     width: 100%; }
     #myCarousel .item img:focus {
       outline: initial; }
-  #myCarousel .carousel-control .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); }
-    #myCarousel .carousel-control .arrow img {
-      width: 50px; }
+  #myCarousel .carousel-control {
+    opacity: 1; }
+    #myCarousel .carousel-control .arrow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      #myCarousel .carousel-control .arrow img {
+        width: 80px; }
 
 #nosotros .left {
   float: left;
@@ -289,11 +301,13 @@ header {
     bottom: -16px;
     z-index: 1; }
   #nosotros .left .text {
+    width: 386px;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-    @media (max-width: 425px) {
+    @media (max-width: 1024px) {
       #nosotros .left .text {
         width: calc(100% - 100px); } }
     #nosotros .left .text h2 {
@@ -344,9 +358,9 @@ header {
     transform: translateY(-50%);
     width: 470px;
     left: 57px; }
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       #nosotros .right img {
-        width: 276px; } }
+        width: calc(100% - 118px); } }
     @media (max-width: 425px) {
       #nosotros .right img {
         left: 50px;
@@ -387,7 +401,14 @@ header {
   position: relative;
   width: 50%;
   height: 515px;
-  background: #5c8283; }
+  background: #5c8283;
+  text-align: center; }
+  #fotos .right > div {
+    width: 346px; }
+    @media (max-width: 1024px) {
+      #fotos .right > div {
+        width: calc(100% - 100px);
+        left: 50px !important; } }
   @media (max-width: 425px) {
     #fotos .right {
       width: 100%; } }
@@ -477,6 +498,9 @@ header {
       #maestro-cervecero .container-proceso .box-proceso p {
         font-size: 0.85em;
         text-align: left; }
+        @media (max-width: 425px) {
+          #maestro-cervecero .container-proceso .box-proceso p {
+            text-align: center; } }
 
 #nuestras-cervezas {
   padding: 40px 0;
@@ -515,6 +539,47 @@ header {
     left: 0; }
   #nuestras-cervezas .col-xs-12:first-child {
     margin-bottom: 60px; }
+  #nuestras-cervezas .slick-slider {
+    margin-bottom: 40px; }
+    #nuestras-cervezas .slick-slider .slick-prev {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      z-index: 10;
+      display: block;
+      background-image: url("../images/flechaizq.svg");
+      background-position: center;
+      background-size: cover;
+      background-color: transparent;
+      border: none;
+      width: 40px;
+      height: 32px; }
+    #nuestras-cervezas .slick-slider .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      z-index: 10;
+      display: block;
+      background-image: url("../images/flechaderech.svg");
+      background-position: center;
+      background-size: cover;
+      background-color: transparent;
+      border: none;
+      width: 40px;
+      height: 32px; }
+  #nuestras-cervezas .slick-slide {
+    padding: 0 10px; }
+    #nuestras-cervezas .slick-slide:focus {
+      outline: none; }
+    #nuestras-cervezas .slick-slide img {
+      width: 180px;
+      margin: auto; }
+    #nuestras-cervezas .slick-slide h3 {
+      text-transform: uppercase; }
+    #nuestras-cervezas .slick-slide img.capitan-dragon {
+      width: 50px; }
 
 #contacto {
   padding: 40px 0;
@@ -678,12 +743,37 @@ header {
     top: -16px;
     z-index: 1;
     left: 0; }
+  #donde-estamos .info-location div {
+    float: left;
+    margin: 10px 20px 10px 0px;
+    font-size: 0.9em; }
+    @media (max-width: 425px) {
+      #donde-estamos .info-location div {
+        float: none;
+        text-align: left; } }
+    #donde-estamos .info-location div span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      top: 4px;
+      position: relative;
+      margin-right: 5px; }
+    #donde-estamos .info-location div p {
+      display: inline-block; }
+    #donde-estamos .info-location div.location-estamos span {
+      background: #f7e356; }
+    #donde-estamos .info-location div.location-estaremos span {
+      background: #438485; }
+    #donde-estamos .info-location div.location-estuvimos span {
+      background: #40342d; }
   #donde-estamos #map {
     width: 100%;
     height: 500px; }
 
 .title img {
-  height: 120px; }
+  height: 120px;
+  max-width: 100%; }
 
 #box-overlay {
   position: fixed;
